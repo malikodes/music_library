@@ -57,7 +57,7 @@ class Application < Sinatra::Base
 
 
   get '/' do
-    return erb(:album)
+    return erb(:all_albums)
   end
 
 
