@@ -57,6 +57,8 @@ class Application < Sinatra::Base
 
 
   get '/' do
+    repo = AlbumRepository.new
+    @albums = repo.all
     return erb(:all_albums)
   end
 
